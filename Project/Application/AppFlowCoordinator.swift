@@ -14,7 +14,8 @@ final class AppFlowCoordinator: FlowCoordinator {
     }
 
     func initializeApp() {
-        let viewController = HelloWorldViewController(delegate: self)
+//        let viewController = HelloWorldViewController(delegate: self) //TODO: restore this line
+		let viewController = SearchViewController() //TODO: delete this line
         rootViewController = UINavigationController(rootViewController: viewController)
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
