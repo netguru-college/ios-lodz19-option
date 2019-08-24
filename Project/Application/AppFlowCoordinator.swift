@@ -14,14 +14,14 @@ final class AppFlowCoordinator: FlowCoordinator {
     }
 
     func initializeApp() {
-        let viewController = HelloWorldViewController(delegate: self)
+        let viewController = HomeViewController(delegate: self)
         rootViewController = UINavigationController(rootViewController: viewController)
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
     }
 }
 
-extension AppFlowCoordinator: HelloWorldViewControllerDelegate {
+extension AppFlowCoordinator: HomeViewControllerDelegate {
 
     func didSelectNextButton() {
         let nextViewController = WelcomeViewController()
