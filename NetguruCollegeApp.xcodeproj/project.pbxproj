@@ -16,6 +16,12 @@
 		696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49E217635D2005C9FDD /* Assets.xcassets */; };
 		696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE4A0217635D2005C9FDD /* LaunchScreen.storyboard */; };
 		696FE4AD217635D2005C9FDD /* NetguruCollegeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */; };
+		D7404BC7231141E400001B79 /* HomeFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7404BC6231141E400001B79 /* HomeFlowCoordinator.swift */; };
+		D7404BC9231141F100001B79 /* SearchFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7404BC8231141F100001B79 /* SearchFlowCoordinator.swift */; };
+		D7404BCB2311421600001B79 /* ProfileFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7404BCA2311421600001B79 /* ProfileFlowCoordinator.swift */; };
+		D78515D8231144C400042CEE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78515D7231144C400042CEE /* SearchViewController.swift */; };
+		D78515DA2311469000042CEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78515D92311469000042CEE /* HomeViewController.swift */; };
+		D78515DC231146D900042CEE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78515DB231146D900042CEE /* ProfileViewController.swift */; };
 		E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */; };
 		E814F7E22310713600788FA9 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DE2310713600788FA9 /* APIMethod.swift */; };
 		E814F7E32310713600788FA9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DF2310713600788FA9 /* APIClient.swift */; };
@@ -56,6 +62,12 @@
 		696FE4AE217635D2005C9FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70B9FAC81C5FF8A335FA5053 /* Pods-NetguruCollegeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.debug.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B70CCCFD923A49BB70EE7D09 /* Pods-NetguruCollegeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.release.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.release.xcconfig"; sourceTree = "<group>"; };
+		D7404BC6231141E400001B79 /* HomeFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowCoordinator.swift; sourceTree = "<group>"; };
+		D7404BC8231141F100001B79 /* SearchFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlowCoordinator.swift; sourceTree = "<group>"; };
+		D7404BCA2311421600001B79 /* ProfileFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlowCoordinator.swift; sourceTree = "<group>"; };
+		D78515D7231144C400042CEE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D78515D92311469000042CEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D78515DB231146D900042CEE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		E814F7DE2310713600788FA9 /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		E814F7DF2310713600788FA9 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -180,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				692FEDDA2311797900AEBE89 /* Models */,
+				D7404BC5231141D200001B79 /* FlowCoordinators */,
 				E814F7DB2310712200788FA9 /* Base classes */,
 				4EF6845F21E6435400DA50FC /* Services */,
 				696FE4B9217637D5005C9FDD /* Screens */,
@@ -190,6 +203,7 @@
 		696FE4B9217637D5005C9FDD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D78515D6231144B600042CEE /* Controllers */,
 				E814F7EB2310714E00788FA9 /* Welcome */,
 				E814F7EA2310714500788FA9 /* HelloWorld */,
 			);
@@ -228,6 +242,26 @@
 				E814F7F42310719D00788FA9 /* AppFlowCoordinator.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		D7404BC5231141D200001B79 /* FlowCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				D7404BC6231141E400001B79 /* HomeFlowCoordinator.swift */,
+				D7404BC8231141F100001B79 /* SearchFlowCoordinator.swift */,
+				D7404BCA2311421600001B79 /* ProfileFlowCoordinator.swift */,
+			);
+			path = FlowCoordinators;
+			sourceTree = "<group>";
+		};
+		D78515D6231144B600042CEE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D78515D7231144C400042CEE /* SearchViewController.swift */,
+				D78515D92311469000042CEE /* HomeViewController.swift */,
+				D78515DB231146D900042CEE /* ProfileViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		D78ED9CC3C02DDC356B00910 /* Frameworks */ = {
@@ -396,18 +430,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				692FEDDE231179B100AEBE89 /* APIRequests.swift in Sources */,
+				D78515D8231144C400042CEE /* SearchViewController.swift in Sources */,
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
 				E814F7E92310714300788FA9 /* HelloWorldViewController.swift in Sources */,
 				43AD9BA223114B7E008E74C9 /* APIService.swift in Sources */,
+				D7404BC9231141F100001B79 /* SearchFlowCoordinator.swift in Sources */,
+				D78515DC231146D900042CEE /* ProfileViewController.swift in Sources */,
+				D7404BC7231141E400001B79 /* HomeFlowCoordinator.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
 				692FEDDC2311798400AEBE89 /* Movie.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
+				D78515DA2311469000042CEE /* HomeViewController.swift in Sources */,
 				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
 				E814F7F52310719E00788FA9 /* AppFlowCoordinator.swift in Sources */,
+				D7404BCB2311421600001B79 /* ProfileFlowCoordinator.swift in Sources */,
 				E814F7ED2310716000788FA9 /* HelloWorldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +566,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,7 +574,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.netguru.college.app;
 				PRODUCT_NAME = NetguruCollegeApp;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -544,6 +585,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -551,7 +593,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.netguru.college.app;
 				PRODUCT_NAME = NetguruCollegeApp;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
