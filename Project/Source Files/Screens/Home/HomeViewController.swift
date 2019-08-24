@@ -5,22 +5,15 @@
 
 import UIKit
 
-protocol HomeViewControllerDelegate: AnyObject {
-    func didSelectNextButton()
-}
-
 class HomeViewController: UIViewController {
     private var homeViewModel = HomeViewModel()
     private var customView: HomeView {
         return view as! HomeView
     }
 
-    private weak var delegate: HomeViewControllerDelegate?
-
     // MARK: - Functions
 
-    init(delegate: HomeViewControllerDelegate?) {
-        self.delegate = delegate
+    init() {
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -37,10 +30,6 @@ class HomeViewController: UIViewController {
         title = "Discovery"
         customView.moviesCollectionView.delegate = self
         homeViewModel.setup(collectionView: customView.moviesCollectionView)
-    }
-
-    @objc func nextAction() {
-        delegate?.didSelectNextButton()
     }
 }
 
