@@ -8,7 +8,6 @@ import Foundation
 //final
 class APIClient {
 
-//    let baseURL = "https://cat-fact.herokuapp.com"
     let baseURL = "https://api.themoviedb.org/3/"
     let sessionConfiguration = URLSessionConfiguration.default
     lazy var session = URLSession(configuration: sessionConfiguration)
