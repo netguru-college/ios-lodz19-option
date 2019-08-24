@@ -7,13 +7,6 @@ import UIKit
 
 final class AppFlowCoordinator: FlowCoordinator {
 
-    // MARK: - Constants
-    
-    private struct Constants {
-        static let homeString = "Home"
-        static let searchString = "Search"
-        static let profileString = "Profile"
-    }
     
     // MARK: - Properties
     
@@ -40,14 +33,6 @@ final class AppFlowCoordinator: FlowCoordinator {
         let homeViewController = homeFlowCoordinator.rootViewController
         let searchViewController = searchFlowCoordinator.rootViewController
         let profileViewController = profileFlowCoordinator.rootViewController
-        
-        homeViewController.tabBarItem.title = Constants.homeString
-        searchViewController.tabBarItem.title = Constants.searchString
-        profileViewController.tabBarItem.title = Constants.profileString
-        
-        homeViewController.tabBarItem.image = UIImage(named: Constants.homeString)
-        searchViewController.tabBarItem.image = UIImage(named: Constants.searchString)
-        profileViewController.tabBarItem.image = UIImage(named: Constants.profileString)
         
         tabbarViewController.viewControllers = [
             homeViewController,
