@@ -13,8 +13,8 @@ class ProfileViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         view.backgroundColor = UIColor.yellow
         
-        profileViewController.tabBarItem.title = "Profile"
-        profileViewController.tabBarItem.image = UIImage(named: "Profile")
+        tabBarItem.title = "Profile"
+        tabBarItem.image = UIImage(named: "Profile")
     }
     
     required init?(coder aDecoder: NSCoder) {
