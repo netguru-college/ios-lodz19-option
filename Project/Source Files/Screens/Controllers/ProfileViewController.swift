@@ -7,7 +7,8 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    required init() {
+    init() {
+        super.init(nibName: nil, bundle: nil)
         view.backgroundColor = UIColor.yellow
     }
     

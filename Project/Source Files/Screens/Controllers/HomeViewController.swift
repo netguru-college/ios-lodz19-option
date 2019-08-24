@@ -7,7 +7,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    required init() {
+    init() {
+        super.init(nibName: nil, bundle: nil)
         view.backgroundColor = UIColor.green
     }
     

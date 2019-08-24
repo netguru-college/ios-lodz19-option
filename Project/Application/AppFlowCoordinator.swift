@@ -7,37 +7,55 @@ import UIKit
 
 final class AppFlowCoordinator: FlowCoordinator {
 
+    // MARK: - Constants
+    
+    private struct Constants {
+        static let homeString = "Home"
+        static let searchString = "Search"
+        static let profileString = "Profile"
+    }
+    
+    // MARK: - Properties
+    
     private let window: UIWindow
     
     private var homeFlowCoordinator: HomeFlowCoordinator
     private var searchFlowCoordinator: SearchFlowCoordinator
     private var profileFlowCoordinator: ProfileFlowCoordinator
 
-
-    init(window: UIWindow) {
-        
-        initializeCoordinators()
-        let tabbarViewController = UITabBarController()
-        
-        tabbarViewController.viewControllers = [
-            homeFlowCoordinator.rootViewController,
-            searchFlowCoordinator.rootViewController,
-            profileFlowCoordinator.rootViewController
-        ]
-   
-        self.window = window
-    }
+    // MARK: - Initializers
     
-    private func initializeCoordinators() {
+    init(window: UIWindow) {
+        self.window = window
         searchFlowCoordinator = SearchFlowCoordinator()
         homeFlowCoordinator = HomeFlowCoordinator()
         profileFlowCoordinator = ProfileFlowCoordinator()
+        
+        super.init()
     }
 
     func initializeApp() {
-        let viewController = HelloWorldViewController(delegate: self)
-        rootViewController = UINavigationController(rootViewController: viewController)
-        window.rootViewController = rootViewController
+        let tabbarViewController = UITabBarController()
+        
+        let homeViewController = homeFlowCoordinator.rootViewController
+        let searchViewController = searchFlowCoordinator.rootViewController
+        let profileViewController = profileFlowCoordinator.rootViewController
+        
+        homeViewController.tabBarItem.title = Constants.homeString
+        searchViewController.tabBarItem.title = Constants.searchString
+        profileViewController.tabBarItem.title = Constants.profileString
+        
+        homeViewController.tabBarItem.image = UIImage(named: Constants.homeString)
+        searchViewController.tabBarItem.image = UIImage(named: Constants.searchString)
+        profileViewController.tabBarItem.image = UIImage(named: Constants.profileString)
+        
+        tabbarViewController.viewControllers = [
+            homeViewController,
+            searchViewController,
+            profileViewController
+        ]
+        
+        window.rootViewController = tabbarViewController
         window.makeKeyAndVisible()
     }
 }
