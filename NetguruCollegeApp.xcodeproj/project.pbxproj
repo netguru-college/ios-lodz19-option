@@ -101,17 +101,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		43AD9BA023114B3C008E74C9 /* FetchAPI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FetchAPI;
-			sourceTree = "<group>";
-		};
 		4EF6845F21E6435400DA50FC /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				43AD9BA023114B3C008E74C9 /* FetchAPI */,
 				4EF6846021E6438300DA50FC /* Networking */,
 			);
 			path = Services;
