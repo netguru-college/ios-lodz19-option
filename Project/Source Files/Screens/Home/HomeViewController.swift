@@ -36,7 +36,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         title = "Discovery"
         customView.moviesCollectionView.delegate = self
-        
         homeViewModel.setup(collectionView: customView.moviesCollectionView)
     }
 

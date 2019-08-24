@@ -36,7 +36,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="moviesCollectionView" destination="sRy-N8-l9g" id="4YW-7e-RTf"/>
+                <outlet property="moviesCollectionView" destination="sRy-N8-l9g" id="mIK-a4-mTH"/>
             </connections>
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
         </view>
