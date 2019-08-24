@@ -7,20 +7,14 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    // MARK: - Constants
-    
-    private struct Constants {
-        static let homeString = "Profile"
-    }
-    
     // MARK: - Initializers
     
     init() {
         super.init(nibName: nil, bundle: nil)
         view.backgroundColor = UIColor.yellow
         
-        profileViewController.tabBarItem.title = Constants.profileString
-        profileViewController.tabBarItem.image = UIImage(named: Constants.profileString)
+        profileViewController.tabBarItem.title = "Profile"
+        profileViewController.tabBarItem.image = UIImage(named: "Profile")
     }
     
     required init?(coder aDecoder: NSCoder) {

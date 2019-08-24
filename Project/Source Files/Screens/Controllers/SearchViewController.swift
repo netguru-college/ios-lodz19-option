@@ -7,21 +7,14 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
-    
-    // MARK: - Constants
-    
-    private struct Constants {
-        static let searchString = "Search"
-    }
-    
     // MARK: - Initializers
     
     init() {
         super.init(nibName: nil, bundle: nil)
         view.backgroundColor = UIColor.blue
         
-        tabBarItem.title = Constants.searchString
-        tabBarItem.image = UIImage(named: Constants.searchString)
+        tabBarItem.title = "Search"
+        tabBarItem.image = UIImage(named: "Search")
     }
     
     required init?(coder aDecoder: NSCoder) {
