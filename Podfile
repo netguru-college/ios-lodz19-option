@@ -3,11 +3,19 @@ platform :ios, '11.0'
 use_frameworks!
 inhibit_all_warnings!
 
-target 'NetguruCollegeApp' do
+def pods
 	# Put new pods here
 	pod 'SwiftLint', '~> 0.34.0'
 	pod 'Kingfisher', '~> 5.0'
 		
+end
+
+target 'NetguruCollegeApp' do
+   pods
+end
+
+target 'NetguruCollegeAppTests' do
+   pods
 end
 
 post_install do |installer|

@@ -6,7 +6,7 @@
 
 import Foundation
 
-struct Movie: Decodable {
+struct Movie: Codable {
     let id : Int
     let title: String
     let voteAverage: Float
@@ -30,7 +30,7 @@ struct Movie: Decodable {
     }
 }
 
-struct HomeModel: Decodable {
+struct HomeModel: Codable {
     let page: Int
     let results: [Movie]
 }
