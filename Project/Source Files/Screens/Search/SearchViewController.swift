@@ -153,9 +153,11 @@ extension SearchViewController: UITableViewDataSource {
             withIdentifier: SearchViewCell.searchViewCellReuseIdentifier) as? SearchViewCell else {
                 fatalError("Can't cast tableView cell to SearchViewCell")
         }
+        cell.posterImageView.image = nil
         let movie = searchViewModel.movieArray[indexPath.row]
         cell.titleLabel.text = movie.title
         cell.subtitleLabel.text = String(searchViewModel.movieArray[indexPath.row].voteAverage)
+        cell.posterImageView.kf.setImage(with: movie.posterURL)
         return cell
     }
 }
