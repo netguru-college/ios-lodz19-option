@@ -24,7 +24,7 @@ final class AppFlowCoordinator: FlowCoordinator {
 extension AppFlowCoordinator: HomeViewControllerDelegate {
 
     func didSelectNextButton() {
-        let nextViewController = WelcomeViewController()
+        let nextViewController = HomeViewController(delegate: self)
         rootViewController.show(nextViewController, sender: nil)
     }
 }
