@@ -7,7 +7,15 @@ import UIKit
 import Kingfisher
 
 class HomeViewModel: NSObject {
-    private var moviePosterURL = URL(string: "https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg")
+    private let apiService = Service()
+
+    func getPopularMovies() {
+        apiService.fetchHomeView(success: { (movie) in
+            print(movie)
+        }) { (error) in
+            print(error)
+        }
+    }
 
     func setup(collectionView: UICollectionView) {
         let customCollectionViewLayout = UICollectionViewFlowLayout()
@@ -27,7 +35,7 @@ extension HomeViewModel: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let movieCell = collectionView.dequeueReusableCell(withReuseIdentifier: "movie", for: indexPath) as! MovieCollectionViewCell
-        movieCell.moviePosterImageView.kf.setImage(with: moviePosterURL)
+        //movieCell.moviePosterImageView.kf.setImage(with: moviePosterURL)
         return movieCell
     }
 }

@@ -41,6 +41,7 @@ class HomeViewController: UIViewController {
 
         customView.moviesCollectionView.delegate = self
         homeViewModel.setup(collectionView: customView.moviesCollectionView)
+        homeViewModel.getPopularMovies()
     }
 }
 
