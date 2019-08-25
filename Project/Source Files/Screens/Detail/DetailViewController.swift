@@ -7,7 +7,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    private var detailViewModel = DetailViewModel()
+    private var detailViewModel: DetailViewModel
     private var customView: DetailView {
         return view as! DetailView
     }
@@ -16,7 +16,8 @@ class DetailViewController: UIViewController {
         view = DetailView.instanceFromNib()
     }
 
-    init() {
+    init(detailViewModel: DetailViewModel) {
+        self.detailViewModel = detailViewModel
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -26,5 +27,6 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         detailViewModel.setupView(view: customView)
+        title = detailViewModel.movie.title
     }
 }

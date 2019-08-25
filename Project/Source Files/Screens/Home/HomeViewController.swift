@@ -6,22 +6,25 @@
 import UIKit
 
 protocol HomeViewControllerDelegate: AnyObject {
-    func didSelectNextButton()
+    func didSelectMovie()
 }
 
 class HomeViewController: UIViewController {
+
+    private weak var delagate: HomeViewControllerDelegate?
     private var homeViewModel = HomeViewModel()
     private var customView: HomeView {
         return view as! HomeView
     }
 
-    private weak var delegate: HomeViewControllerDelegate?
-
     // MARK: - Functions
 
-    init(delegate: HomeViewControllerDelegate?) {
-        self.delegate = delegate
+    init(delagate: HomeViewControllerDelegate) {
+        self.delagate = delagate
         super.init(nibName: nil, bundle: nil)
+
+        tabBarItem.title = "Home"
+        tabBarItem.image = UIImage(named: "Home")
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -35,12 +38,9 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Discovery"
+
         customView.moviesCollectionView.delegate = self
         homeViewModel.setup(collectionView: customView.moviesCollectionView)
-    }
-
-    @objc func nextAction() {
-        delegate?.didSelectNextButton()
     }
 }
 
@@ -50,4 +50,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegate
         
         return CGSize(width: (width * 0.42), height: 240)
     }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delagate?.didSelectMovie()
+    }
 }
+
+
+

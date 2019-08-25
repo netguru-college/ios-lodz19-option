@@ -3,6 +3,7 @@
 //  NetguruCollegeApp
 //
 
+
 import Foundation
 
 struct Movie: Decodable {

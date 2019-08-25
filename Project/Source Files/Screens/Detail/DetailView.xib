@@ -17,13 +17,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wrt-FF-nnf">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="324"/>
+                    <rect key="frame" x="0.0" y="88" width="414" height="291"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="324" id="QAa-9d-PYh"/>
+                        <constraint firstAttribute="height" constant="291" id="QAa-9d-PYh"/>
                     </constraints>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNW-jL-ZSV">
-                    <rect key="frame" x="0.0" y="332" width="414" height="564"/>
+                    <rect key="frame" x="0.0" y="387" width="414" height="509"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryR-4j-PeO">
                             <rect key="frame" x="0.0" y="-10" width="414" height="266.5"/>
@@ -96,7 +96,7 @@
                     <constraints>
                         <constraint firstItem="ryR-4j-PeO" firstAttribute="leading" secondItem="uNW-jL-ZSV" secondAttribute="leading" id="3kJ-yr-JCC"/>
                         <constraint firstItem="ryR-4j-PeO" firstAttribute="width" secondItem="uNW-jL-ZSV" secondAttribute="width" id="HYB-gb-8hZ"/>
-                        <constraint firstAttribute="bottom" secondItem="ryR-4j-PeO" secondAttribute="bottom" id="TPt-fl-tI0"/>
+                        <constraint firstAttribute="bottom" secondItem="ryR-4j-PeO" secondAttribute="bottom" constant="252.5" id="TPt-fl-tI0"/>
                         <constraint firstItem="ryR-4j-PeO" firstAttribute="top" secondItem="uNW-jL-ZSV" secondAttribute="top" constant="-10" id="i0A-mu-0Lq"/>
                         <constraint firstAttribute="trailing" secondItem="ryR-4j-PeO" secondAttribute="trailing" id="lCN-vb-ocD"/>
                     </constraints>
@@ -118,7 +118,7 @@
                 <constraint firstItem="wrt-FF-nnf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dJq-qE-qpV"/>
                 <constraint firstItem="wrt-FF-nnf" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="pA0-ct-pEh"/>
                 <constraint firstAttribute="bottom" secondItem="uNW-jL-ZSV" secondAttribute="bottom" id="xRm-2Z-PNU"/>
-                <constraint firstItem="wrt-FF-nnf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yju-Zs-006"/>
+                <constraint firstItem="wrt-FF-nnf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="88" id="yju-Zs-006"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
