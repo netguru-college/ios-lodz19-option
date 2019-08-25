@@ -3,10 +3,13 @@
 //  NetguruCollegeApp
 //
 
-
+import Kingfisher
 import UIKit
 
 class MovieCollectionViewCell: UICollectionViewCell {
+
+    var posterImageTask: DownloadTask?
+
     lazy var moviePosterImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -39,5 +42,9 @@ class MovieCollectionViewCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         sharedInit()
+    }
+
+    override func prepareForReuse() {
+        posterImageTask?.cancel()
     }
 }

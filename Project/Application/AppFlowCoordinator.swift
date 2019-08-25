@@ -6,7 +6,6 @@
 import UIKit
 
 final class AppFlowCoordinator: FlowCoordinator {
-
     
     // MARK: - Properties
     
@@ -23,7 +22,7 @@ final class AppFlowCoordinator: FlowCoordinator {
         self.window = window
         appDependencies = AppDependencies()
         searchFlowCoordinator = SearchFlowCoordinator(apiService: appDependencies.apiService)
-        homeFlowCoordinator = HomeFlowCoordinator()
+        homeFlowCoordinator = HomeFlowCoordinator(apiService: appDependencies.apiService)
         profileFlowCoordinator = ProfileFlowCoordinator()
         
         super.init()
