@@ -16,10 +16,10 @@ class HomeFlowCoordinator: FlowCoordinator {
 }
 
 extension HomeFlowCoordinator: HomeViewControllerDelegate {
-
-    func didSelectMovie() {
+    
+    func didSelectMovie(movie: Movie) {
         let detailViewController = DetailViewController(
-            detailViewModel: DetailViewModel()
+            detailViewModel: DetailViewModel(movie: movie)
         )
         
         rootViewController.show(detailViewController, sender: nil)

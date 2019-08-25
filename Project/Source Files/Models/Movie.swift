@@ -11,6 +11,14 @@ struct Movie: Decodable {
     let title: String
     let voteAverage: Float
     let posterPath: String?
+    var posterURL: URL? {
+        guard let posterPath = posterPath else {
+            return nil
+        }
+
+        return URL(string: "https://image.tmdb.org/t/p/w500\(posterPath)")
+    }
+
     let description: String
 
     enum CodingKeys: String, CodingKey {
