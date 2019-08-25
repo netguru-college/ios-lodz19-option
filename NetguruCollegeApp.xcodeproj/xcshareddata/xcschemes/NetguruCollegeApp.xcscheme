@@ -32,8 +32,8 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "696FE4A7217635D2005C9FDD"
-               BuildableName = "NetguruCollegeApp Tests.xctest"
+               BlueprintIdentifier = "D7725D672312ABF000B20AB5"
+               BuildableName = "NetguruCollegeAppTests.xctest"
                BlueprintName = "NetguruCollegeAppTests"
                ReferencedContainer = "container:NetguruCollegeApp.xcodeproj">
             </BuildableReference>

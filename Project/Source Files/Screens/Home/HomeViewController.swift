@@ -10,6 +10,8 @@ class HomeViewController: UIViewController {
     private var customView: HomeView {
         return view as! HomeView
     }
+    
+    
 
     // MARK: - Functions
 
