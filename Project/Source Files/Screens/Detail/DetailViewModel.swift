@@ -21,9 +21,5 @@ class DetailViewModel {
         view.moviePosterImageView.kf.setImage(with: URL(string: movie.posterPath!))
         view.movieRating.text = "Rating: \(movie.voteAverage)"
         view.movieDescriptionLabel.text = movie.description
-
-        view.movieTitleLabel.font = UIFont.systemFont(ofSize: 32, weight: .bold)
-        view.movieFavouriteButton.layer.cornerRadius = 5
-        view.movieWatchedButton.layer.cornerRadius = 5
     }
 }
