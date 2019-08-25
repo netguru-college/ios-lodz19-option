@@ -6,7 +6,7 @@
 import UIKit
 
 protocol HomeViewControllerDelegate: AnyObject {
-    func didSelectMovie()
+    func didSelectMovie(movie: Movie)
 }
 
 class HomeViewController: UIViewController {
@@ -56,7 +56,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegate
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delagate?.didSelectMovie()
+        let movie = homeViewModel.popularMovies[indexPath.row]
+        delagate?.didSelectMovie(movie: movie)
     }
 }
 
