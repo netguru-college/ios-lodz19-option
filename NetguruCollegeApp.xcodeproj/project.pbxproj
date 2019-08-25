@@ -21,6 +21,7 @@
 		696FE4AD217635D2005C9FDD /* NetguruCollegeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */; };
 		932DFFA72312869D00C5D208 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932DFFA62312869D00C5D208 /* SearchViewModel.swift */; };
 		932DFFA923128A0100C5D208 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932DFFA823128A0100C5D208 /* AppDependencies.swift */; };
+		93DA37862312B3D60092A1E0 /* ErrorBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA37852312B3D60092A1E0 /* ErrorBackgroundView.swift */; };
 		93F8AAA3231277D0008940F5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8AA9E231277CF008940F5 /* SearchViewController.swift */; };
 		93F8AAA4231277D0008940F5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8AA9F231277CF008940F5 /* SearchView.swift */; };
 		93F8AAA5231277D0008940F5 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8AAA0231277CF008940F5 /* SearchViewCell.swift */; };
@@ -69,6 +70,7 @@
 		70B9FAC81C5FF8A335FA5053 /* Pods-NetguruCollegeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.debug.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		932DFFA62312869D00C5D208 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		932DFFA823128A0100C5D208 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		93DA37852312B3D60092A1E0 /* ErrorBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBackgroundView.swift; sourceTree = "<group>"; };
 		93F8AA9E231277CF008940F5 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		93F8AA9F231277CF008940F5 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		93F8AAA0231277CF008940F5 /* SearchViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				93F8AAA2231277CF008940F5 /* SearchViewCell.xib */,
 				93F8AA9E231277CF008940F5 /* SearchViewController.swift */,
 				932DFFA62312869D00C5D208 /* SearchViewModel.swift */,
+				93DA37852312B3D60092A1E0 /* ErrorBackgroundView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				932DFFA923128A0100C5D208 /* AppDependencies.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
 				D7404BC9231141F100001B79 /* SearchFlowCoordinator.swift in Sources */,
+				93DA37862312B3D60092A1E0 /* ErrorBackgroundView.swift in Sources */,
 				D78515DC231146D900042CEE /* ProfileViewController.swift in Sources */,
 				D7404BC7231141E400001B79 /* HomeFlowCoordinator.swift in Sources */,
 				93F8AAA5231277D0008940F5 /* SearchViewCell.swift in Sources */,

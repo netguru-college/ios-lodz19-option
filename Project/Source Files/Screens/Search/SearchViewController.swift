@@ -9,17 +9,13 @@ class SearchViewController: UIViewController {
 
     enum State {
         case empty
-        case populated([Movie])
+        case noSearchResults
+        case populated
     }
 
-    var state = State.empty {
+    private let searchViewModel: SearchViewModel
+    private var state = State.empty {
         didSet {
-            switch self.state {
-            case .populated(let movies):
-                searchViewModel.movieArray = movies
-            default:
-                break
-            }
             DispatchQueue.main.async {
                 self.setTableViewBackground()
                 let range = Range(uncheckedBounds: (0, self.tableView.numberOfSections))
@@ -35,8 +31,8 @@ class SearchViewController: UIViewController {
     private var tableView: UITableView {
         return customView.tableView
     }
+    private var errorBackgroundView: ErrorBackgroundView?
     private var searchController = UISearchController(searchResultsController: nil)
-    private let searchViewModel: SearchViewModel
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -59,6 +55,7 @@ class SearchViewController: UIViewController {
         setupTableView()
         setupSearchViewController()
         setupSearchController()
+        setTableViewBackground()
     }
 
     private func setupTableView() {
@@ -78,6 +75,7 @@ class SearchViewController: UIViewController {
         navigationItem.hidesSearchBarWhenScrolling = false
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.delegate = self
     }
 
     private func setupSearchViewController() {
@@ -87,19 +85,37 @@ class SearchViewController: UIViewController {
 
     private func setTableViewBackground() {
 
+        func setErrorBackgroundView(message: String) {
+            errorBackgroundView?.removeFromSuperview()
+            errorBackgroundView = nil
+            errorBackgroundView = ErrorBackgroundView()
+            tableView.addSubview(errorBackgroundView!)
+            tableView.separatorStyle = .none
+            errorBackgroundView?.configureConstraints()
+            errorBackgroundView?.errorDescription.text = message
+        }
+
         func setForEmpty() {
-            //TODO: display a message as tableView background
+            tableView.separatorStyle = .none
+        }
+
+        func setForNoSearchResults() {
+            setErrorBackgroundView(message: "No movies found!")
         }
 
         func setForPopulated() {
-            //TODO: turn off any error backgrounds
+            tableView.subviews.forEach( { if $0 is ErrorBackgroundView { $0.removeFromSuperview() } } )
+            errorBackgroundView = nil
+            tableView.separatorStyle = .singleLine
         }
 
         switch state {
-        case .populated:
-            setForPopulated()
         case .empty:
             setForEmpty()
+        case .populated:
+            setForPopulated()
+        case .noSearchResults:
+            setForNoSearchResults()
         }
     }
 }
@@ -129,16 +145,25 @@ extension SearchViewController: UITableViewDataSource {
 
 extension SearchViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
+        if searchController.isActive == false {
+            state = .empty
+        }
         guard let searchQuery = searchController.searchBar.text,
                                 searchController.searchBar.text?.isEmpty == false else {
             return
         }
-        searchViewModel.searchMovieByTitle(searchQuery) { [weak self] (movies, error) in
-            if let movies = movies {
-                self?.state = .populated(movies)
-            } else {
-                self?.state = .empty
+        searchViewModel.searchMovieByTitle(searchQuery) { [weak self] (error) in
+            if error != nil {
+                self?.state = .populated
             }
+        }
+    }
+}
+
+extension SearchViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            state = .empty
         }
     }
 }
