@@ -8,11 +8,10 @@ import UIKit
 
 class SearchFlowCoordinator: FlowCoordinator {
 
-    override init() {
+    init(apiService: APIService) {
         super.init()
-        
-        let navigationController = UINavigationController(rootViewController: SearchViewController())
+        let searchViewController = SearchViewController(searchViewModel: SearchViewModel(apiService: apiService))
+        let navigationController = UINavigationController(rootViewController: searchViewController)
         rootViewController = navigationController
     }
-    
 }

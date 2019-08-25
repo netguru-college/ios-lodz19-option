@@ -23,6 +23,8 @@
 		696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49E217635D2005C9FDD /* Assets.xcassets */; };
 		696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE4A0217635D2005C9FDD /* LaunchScreen.storyboard */; };
 		696FE4AD217635D2005C9FDD /* NetguruCollegeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */; };
+		932DFFA72312869D00C5D208 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932DFFA62312869D00C5D208 /* SearchViewModel.swift */; };
+		932DFFA923128A0100C5D208 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932DFFA823128A0100C5D208 /* AppDependencies.swift */; };
 		93F8AAA3231277D0008940F5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8AA9E231277CF008940F5 /* SearchViewController.swift */; };
 		93F8AAA4231277D0008940F5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8AA9F231277CF008940F5 /* SearchView.swift */; };
 		93F8AAA5231277D0008940F5 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8AAA0231277CF008940F5 /* SearchViewCell.swift */; };
@@ -74,6 +76,8 @@
 		696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetguruCollegeAppTests.swift; sourceTree = "<group>"; };
 		696FE4AE217635D2005C9FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70B9FAC81C5FF8A335FA5053 /* Pods-NetguruCollegeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.debug.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		932DFFA62312869D00C5D208 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		932DFFA823128A0100C5D208 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		93F8AA9E231277CF008940F5 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		93F8AA9F231277CF008940F5 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		93F8AAA0231277CF008940F5 /* SearchViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
@@ -265,6 +269,7 @@
 			children = (
 				696FE497217635CB005C9FDD /* AppDelegate.swift */,
 				E814F7F42310719D00788FA9 /* AppFlowCoordinator.swift */,
+				932DFFA823128A0100C5D208 /* AppDependencies.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				93F8AAA0231277CF008940F5 /* SearchViewCell.swift */,
 				93F8AAA2231277CF008940F5 /* SearchViewCell.xib */,
 				93F8AA9E231277CF008940F5 /* SearchViewController.swift */,
+				932DFFA62312869D00C5D208 /* SearchViewModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -484,6 +490,7 @@
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
 				45CC6B11231278EC00AB9D12 /* DetailView.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
+				932DFFA923128A0100C5D208 /* AppDependencies.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
 				E814F7E92310714300788FA9 /* HomeViewController.swift in Sources */,
 				D7404BC9231141F100001B79 /* SearchFlowCoordinator.swift in Sources */,
@@ -498,6 +505,7 @@
 				692FEDDC2311798400AEBE89 /* Movie.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
 				45CC6B172312853000AB9D12 /* DetailViewModel.swift in Sources */,
+				932DFFA72312869D00C5D208 /* SearchViewModel.swift in Sources */,
 				45CC6AFF2311433300AB9D12 /* HomeViewModel.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
 				93F8AAA3231277D0008940F5 /* SearchViewController.swift in Sources */,

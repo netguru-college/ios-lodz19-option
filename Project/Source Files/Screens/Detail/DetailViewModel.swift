@@ -18,7 +18,7 @@ class DetailViewModel {
 
     func setupView(view: DetailView) {
         view.movieTitleLabel.text = movie.title
-        view.moviePosterImageView.kf.setImage(with: URL(string: movie.posterPath))
+        view.moviePosterImageView.kf.setImage(with: URL(string: movie.posterPath!))
         view.movieRating.text = "Rating: \(movie.voteAverage)"
         view.movieDescriptionLabel.text = movie.description
 

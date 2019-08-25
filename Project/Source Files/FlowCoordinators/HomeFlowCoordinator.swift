@@ -7,9 +7,10 @@
 import UIKit
 
 class HomeFlowCoordinator: FlowCoordinator {
-    override init() {
+
+    init(apiService: APIService) {
         super.init()
-        let viewController = HomeViewController(delagate: self)
+        let viewController = HomeViewController(delagate: self, homeViewModel: HomeViewModel(apiService: apiService))
         rootViewController = UINavigationController(rootViewController: viewController)
     }
 }

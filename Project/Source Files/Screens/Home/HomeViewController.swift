@@ -10,17 +10,18 @@ protocol HomeViewControllerDelegate: AnyObject {
 }
 
 class HomeViewController: UIViewController {
-
+    
     private weak var delagate: HomeViewControllerDelegate?
-    private var homeViewModel = HomeViewModel()
+    private let homeViewModel: HomeViewModel
     private var customView: HomeView {
         return view as! HomeView
     }
 
     // MARK: - Functions
 
-    init(delagate: HomeViewControllerDelegate) {
+    init(delagate: HomeViewControllerDelegate, homeViewModel: HomeViewModel) {
         self.delagate = delagate
+        self.homeViewModel = homeViewModel
         super.init(nibName: nil, bundle: nil)
 
         tabBarItem.title = "Home"
@@ -37,11 +38,13 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Discovery"
+        title = "Discover"
 
         customView.moviesCollectionView.delegate = self
         homeViewModel.setup(collectionView: customView.moviesCollectionView)
-        homeViewModel.getPopularMovies()
+        homeViewModel.getPopularMovies { [weak self] in
+            self?.customView.moviesCollectionView.reloadData()
+        }
     }
 }
 
