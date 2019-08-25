@@ -5,15 +5,23 @@
 
 import UIKit
 
+protocol HomeViewControllerDelegate: AnyObject {
+    func didSelectMovie()
+}
+
 class HomeViewController: UIViewController {
-    private var homeViewModel = HomeViewModel()
+    
+    private weak var delagate: HomeViewControllerDelegate?
+    private let homeViewModel: HomeViewModel
     private var customView: HomeView {
         return view as! HomeView
     }
 
     // MARK: - Functions
 
-    init() {
+    init(delagate: HomeViewControllerDelegate, homeViewModel: HomeViewModel) {
+        self.delagate = delagate
+        self.homeViewModel = homeViewModel
         super.init(nibName: nil, bundle: nil)
 
         tabBarItem.title = "Home"
@@ -30,9 +38,13 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Discovery"
+        title = "Discover"
+
         customView.moviesCollectionView.delegate = self
         homeViewModel.setup(collectionView: customView.moviesCollectionView)
+        homeViewModel.getPopularMovies { [weak self] in
+            self?.customView.moviesCollectionView.reloadData()
+        }
     }
 }
 
@@ -42,4 +54,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegate
         
         return CGSize(width: (width * 0.42), height: 240)
     }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delagate?.didSelectMovie()
+    }
 }
+
+
+
