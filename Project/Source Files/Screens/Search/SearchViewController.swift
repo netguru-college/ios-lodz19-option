@@ -20,7 +20,10 @@ class SearchViewController: UIViewController {
     init(searchController: UISearchController = UISearchController(searchResultsController: nil)) {
         self.searchController = searchController
         super.init(nibName: nil, bundle: nil)
-	}
+
+        tabBarItem.title = "Search"
+        tabBarItem.image = UIImage(named: "Search")
+    }
 
     override func loadView() {
         view = SearchView.instanceFromNib()
