@@ -19,10 +19,17 @@
 		696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49E217635D2005C9FDD /* Assets.xcassets */; };
 		696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE4A0217635D2005C9FDD /* LaunchScreen.storyboard */; };
 		696FE4AD217635D2005C9FDD /* NetguruCollegeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */; };
+		93F8AAA3231277D0008940F5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8AA9E231277CF008940F5 /* SearchViewController.swift */; };
+		93F8AAA4231277D0008940F5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8AA9F231277CF008940F5 /* SearchView.swift */; };
+		93F8AAA5231277D0008940F5 /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8AAA0231277CF008940F5 /* SearchViewCell.swift */; };
+		93F8AAA6231277D0008940F5 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93F8AAA1231277CF008940F5 /* SearchView.xib */; };
+		93F8AAA7231277D0008940F5 /* SearchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93F8AAA2231277CF008940F5 /* SearchViewCell.xib */; };
 		D7404BC7231141E400001B79 /* HomeFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7404BC6231141E400001B79 /* HomeFlowCoordinator.swift */; };
 		D7404BC9231141F100001B79 /* SearchFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7404BC8231141F100001B79 /* SearchFlowCoordinator.swift */; };
 		D7404BCB2311421600001B79 /* ProfileFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7404BCA2311421600001B79 /* ProfileFlowCoordinator.swift */; };
 		D78515D8231144C400042CEE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78515D7231144C400042CEE /* SearchViewController.swift */; };
+		D78515DA2311469000042CEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78515D92311469000042CEE /* HomeViewController.swift */; };
+>>>>>>> 33a381d2f1f2fa42b41a1439adeaefc92180d744
 		D78515DC231146D900042CEE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78515DB231146D900042CEE /* ProfileViewController.swift */; };
 		E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */; };
 		E814F7E22310713600788FA9 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DE2310713600788FA9 /* APIMethod.swift */; };
@@ -61,11 +68,18 @@
 		696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetguruCollegeAppTests.swift; sourceTree = "<group>"; };
 		696FE4AE217635D2005C9FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70B9FAC81C5FF8A335FA5053 /* Pods-NetguruCollegeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.debug.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		93F8AA9E231277CF008940F5 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		93F8AA9F231277CF008940F5 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		93F8AAA0231277CF008940F5 /* SearchViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
+		93F8AAA1231277CF008940F5 /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		93F8AAA2231277CF008940F5 /* SearchViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewCell.xib; sourceTree = "<group>"; };
 		B70CCCFD923A49BB70EE7D09 /* Pods-NetguruCollegeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.release.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.release.xcconfig"; sourceTree = "<group>"; };
 		D7404BC6231141E400001B79 /* HomeFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowCoordinator.swift; sourceTree = "<group>"; };
 		D7404BC8231141F100001B79 /* SearchFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlowCoordinator.swift; sourceTree = "<group>"; };
 		D7404BCA2311421600001B79 /* ProfileFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlowCoordinator.swift; sourceTree = "<group>"; };
 		D78515D7231144C400042CEE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D78515D92311469000042CEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+>>>>>>> 33a381d2f1f2fa42b41a1439adeaefc92180d744
 		D78515DB231146D900042CEE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		E814F7DE2310713600788FA9 /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
@@ -199,6 +213,7 @@
 		696FE4B9217637D5005C9FDD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				93F8AA9D231277A6008940F5 /* Search */,
 				D78515D6231144B600042CEE /* Controllers */,
 				E814F7EA2310714500788FA9 /* Home */,
 			);
@@ -239,6 +254,18 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		93F8AA9D231277A6008940F5 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				93F8AA9F231277CF008940F5 /* SearchView.swift */,
+				93F8AAA1231277CF008940F5 /* SearchView.xib */,
+				93F8AAA0231277CF008940F5 /* SearchViewCell.swift */,
+				93F8AAA2231277CF008940F5 /* SearchViewCell.xib */,
+				93F8AA9E231277CF008940F5 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		D7404BC5231141D200001B79 /* FlowCoordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				D78515D7231144C400042CEE /* SearchViewController.swift */,
+				D78515D92311469000042CEE /* HomeViewController.swift */,
 				D78515DB231146D900042CEE /* ProfileViewController.swift */,
 			);
 			path = Controllers;
@@ -370,6 +398,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */,
+				93F8AAA7231277D0008940F5 /* SearchViewCell.xib in Resources */,
+				E814F7F32310717400788FA9 /* WelcomeView.xib in Resources */,
+				93F8AAA6231277D0008940F5 /* SearchView.xib in Resources */,
 				696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */,
 				E814F7EF2310716700788FA9 /* HomeView.xib in Resources */,
 				696FE49D217635CB005C9FDD /* Main.storyboard in Resources */,
@@ -434,7 +465,6 @@
 			files = (
 				45CC6B07231182CE00AB9D12 /* HomeViewController.swift in Sources */,
 				692FEDDE231179B100AEBE89 /* APIRequests.swift in Sources */,
-				D78515D8231144C400042CEE /* SearchViewController.swift in Sources */,
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
 				45CC6B0123114B3B00AB9D12 /* MovieCollectionViewCell.swift in Sources */,
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
@@ -444,15 +474,20 @@
 				D78515DC231146D900042CEE /* ProfileViewController.swift in Sources */,
 				D7404BC7231141E400001B79 /* HomeFlowCoordinator.swift in Sources */,
 				E814F7E92310714300788FA9 /* HelloWorldViewController.swift in Sources */,
+				93F8AAA5231277D0008940F5 /* SearchViewCell.swift in Sources */,
 				43AD9BA223114B7E008E74C9 /* APIService.swift in Sources */,
 				D7404BC9231141F100001B79 /* SearchFlowCoordinator.swift in Sources */,
 				D78515DC231146D900042CEE /* ProfileViewController.swift in Sources */,
+				93F8AAA4231277D0008940F5 /* SearchView.swift in Sources */,
 				D7404BC7231141E400001B79 /* HomeFlowCoordinator.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
 				692FEDDC2311798400AEBE89 /* Movie.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
 				45CC6AFF2311433300AB9D12 /* HomeViewModel.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
+				93F8AAA3231277D0008940F5 /* SearchViewController.swift in Sources */,
+				D78515DA2311469000042CEE /* HomeViewController.swift in Sources */,
+				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
 				E814F7F52310719E00788FA9 /* AppFlowCoordinator.swift in Sources */,
 				E814F7ED2310716000788FA9 /* HomeView.swift in Sources */,
 				D7404BCB2311421600001B79 /* ProfileFlowCoordinator.swift in Sources */,
@@ -573,6 +608,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FZZ5HZKNX;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -582,6 +620,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.netguru.college.app;
 				PRODUCT_NAME = NetguruCollegeApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -592,6 +631,9 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FZZ5HZKNX;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -601,6 +643,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.netguru.college.app;
 				PRODUCT_NAME = NetguruCollegeApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
