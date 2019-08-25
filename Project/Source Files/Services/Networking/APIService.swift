@@ -6,7 +6,8 @@
 
 import UIKit
 
-class Service {
+
+class APIService {
 
     private let apiClient = APIClient()
     
@@ -17,5 +18,15 @@ class Service {
                 success(model.results)
         }, failure: failure)
     }
+
+    func fetchSearchResults(containing title: String, pageNumber: String, success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void) {
+        
+        let searchRequest = SearchMovieRequest(searchQuery: title, pageNumber: pageNumber)
+
+        apiClient.sendRequestAndDecode(request: searchRequest, success: { (model: HomeModel) in
+            success(model.results)
+        }, failure: failure)
+    }
 }
+
 

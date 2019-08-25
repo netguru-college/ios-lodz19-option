@@ -10,7 +10,7 @@ struct Movie: Decodable {
     let id : Int
     let title: String
     let voteAverage: Float
-    let posterPath: String
+    let posterPath: String?
     let description: String
 
     enum CodingKeys: String, CodingKey {

@@ -6,12 +6,12 @@
 import UIKit
 
 final class AppFlowCoordinator: FlowCoordinator {
-
     
     // MARK: - Properties
     
     private let window: UIWindow
-    
+
+    private let appDependencies: AppDependencies
     private var homeFlowCoordinator: HomeFlowCoordinator
     private var searchFlowCoordinator: SearchFlowCoordinator
     private var profileFlowCoordinator: ProfileFlowCoordinator
@@ -20,8 +20,9 @@ final class AppFlowCoordinator: FlowCoordinator {
     
     init(window: UIWindow) {
         self.window = window
-        searchFlowCoordinator = SearchFlowCoordinator()
-        homeFlowCoordinator = HomeFlowCoordinator()
+        appDependencies = AppDependencies()
+        searchFlowCoordinator = SearchFlowCoordinator(apiService: appDependencies.apiService)
+        homeFlowCoordinator = HomeFlowCoordinator(apiService: appDependencies.apiService)
         profileFlowCoordinator = ProfileFlowCoordinator()
         
         super.init()
@@ -42,13 +43,5 @@ final class AppFlowCoordinator: FlowCoordinator {
         
         window.rootViewController = tabbarViewController
         window.makeKeyAndVisible()
-    }
-}
-
-extension AppFlowCoordinator: HelloWorldViewControllerDelegate {
-
-    func didSelectNextButton() {
-        let nextViewController = WelcomeViewController()
-        rootViewController.show(nextViewController, sender: nil)
     }
 }
