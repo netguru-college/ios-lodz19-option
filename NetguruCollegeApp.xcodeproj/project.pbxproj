@@ -11,6 +11,9 @@
 		45CC6AFF2311433300AB9D12 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC6AFE2311433300AB9D12 /* HomeViewModel.swift */; };
 		45CC6B0123114B3B00AB9D12 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC6B0023114B3B00AB9D12 /* MovieCollectionViewCell.swift */; };
 		45CC6B07231182CE00AB9D12 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7E72310714300788FA9 /* HomeViewController.swift */; };
+		43AD9BA223114B7E008E74C9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD9BA123114B7E008E74C9 /* APIService.swift */; };
+		692FEDDC2311798400AEBE89 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692FEDDB2311798400AEBE89 /* Movie.swift */; };
+		692FEDDE231179B100AEBE89 /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692FEDDD231179B100AEBE89 /* APIRequests.swift */; };
 		696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE497217635CB005C9FDD /* AppDelegate.swift */; };
 		696FE49D217635CB005C9FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49B217635CB005C9FDD /* Main.storyboard */; };
 		696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49E217635D2005C9FDD /* Assets.xcassets */; };
@@ -44,7 +47,10 @@
 /* Begin PBXFileReference section */
 		45CC6AFE2311433300AB9D12 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		45CC6B0023114B3B00AB9D12 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		43AD9BA123114B7E008E74C9 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetguruCollegeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		692FEDDB2311798400AEBE89 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		692FEDDD231179B100AEBE89 /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
 		696FE494217635CB005C9FDD /* NetguruCollegeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetguruCollegeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		696FE497217635CB005C9FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		696FE49C217635CB005C9FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,9 +97,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43AD9BA023114B3C008E74C9 /* FetchAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FetchAPI;
+			sourceTree = "<group>";
+		};
 		4EF6845F21E6435400DA50FC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				43AD9BA023114B3C008E74C9 /* FetchAPI */,
 				4EF6846021E6438300DA50FC /* Networking */,
 			);
 			path = Services;
@@ -102,6 +116,8 @@
 		4EF6846021E6438300DA50FC /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				43AD9BA123114B7E008E74C9 /* APIService.swift */,
+				692FEDDD231179B100AEBE89 /* APIRequests.swift */,
 				E814F7DF2310713600788FA9 /* APIClient.swift */,
 				E814F7E02310713600788FA9 /* APIError.swift */,
 				E814F7DE2310713600788FA9 /* APIMethod.swift */,
@@ -117,6 +133,14 @@
 				B70CCCFD923A49BB70EE7D09 /* Pods-NetguruCollegeApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		692FEDDA2311797900AEBE89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				692FEDDB2311798400AEBE89 /* Movie.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		696FE48B217635CB005C9FDD = {
@@ -163,6 +187,7 @@
 		696FE4B8217637C7005C9FDD /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				692FEDDA2311797900AEBE89 /* Models */,
 				D7404BC5231141D200001B79 /* FlowCoordinators */,
 				E814F7DB2310712200788FA9 /* Base classes */,
 				4EF6845F21E6435400DA50FC /* Services */,
@@ -408,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45CC6B07231182CE00AB9D12 /* HomeViewController.swift in Sources */,
+				692FEDDE231179B100AEBE89 /* APIRequests.swift in Sources */,
 				D78515D8231144C400042CEE /* SearchViewController.swift in Sources */,
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
 				45CC6B0123114B3B00AB9D12 /* MovieCollectionViewCell.swift in Sources */,
@@ -417,6 +443,13 @@
 				D7404BC9231141F100001B79 /* SearchFlowCoordinator.swift in Sources */,
 				D78515DC231146D900042CEE /* ProfileViewController.swift in Sources */,
 				D7404BC7231141E400001B79 /* HomeFlowCoordinator.swift in Sources */,
+				E814F7E92310714300788FA9 /* HelloWorldViewController.swift in Sources */,
+				43AD9BA223114B7E008E74C9 /* APIService.swift in Sources */,
+				D7404BC9231141F100001B79 /* SearchFlowCoordinator.swift in Sources */,
+				D78515DC231146D900042CEE /* ProfileViewController.swift in Sources */,
+				D7404BC7231141E400001B79 /* HomeFlowCoordinator.swift in Sources */,
+				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
+				692FEDDC2311798400AEBE89 /* Movie.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
 				45CC6AFF2311433300AB9D12 /* HomeViewModel.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
