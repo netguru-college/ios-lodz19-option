@@ -13,6 +13,10 @@
 		696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49E217635D2005C9FDD /* Assets.xcassets */; };
 		696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE4A0217635D2005C9FDD /* LaunchScreen.storyboard */; };
 		696FE4AD217635D2005C9FDD /* NetguruCollegeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */; };
+		D7922DE623116F6A003F7A70 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7922DE523116F6A003F7A70 /* ProfileViewModel.swift */; };
+		D7922DEA23116F8D003F7A70 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7922DE923116F8D003F7A70 /* ProfileTableViewController.swift */; };
+		D7922DEE231179AC003F7A70 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7922DEC231179AC003F7A70 /* ProfileTableViewCell.swift */; };
+		D7922DEF231179AC003F7A70 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7922DED231179AC003F7A70 /* ProfileTableViewCell.xib */; };
 		E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */; };
 		E814F7E22310713600788FA9 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DE2310713600788FA9 /* APIMethod.swift */; };
 		E814F7E32310713600788FA9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DF2310713600788FA9 /* APIClient.swift */; };
@@ -50,6 +54,10 @@
 		696FE4AE217635D2005C9FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70B9FAC81C5FF8A335FA5053 /* Pods-NetguruCollegeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.debug.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B70CCCFD923A49BB70EE7D09 /* Pods-NetguruCollegeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.release.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.release.xcconfig"; sourceTree = "<group>"; };
+		D7922DE523116F6A003F7A70 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		D7922DE923116F8D003F7A70 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		D7922DEC231179AC003F7A70 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		D7922DED231179AC003F7A70 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		E814F7DE2310713600788FA9 /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		E814F7DF2310713600788FA9 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -165,6 +173,7 @@
 		696FE4B9217637D5005C9FDD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D7922DE423116AD3003F7A70 /* Profile */,
 				E814F7EB2310714E00788FA9 /* Welcome */,
 				E814F7EA2310714500788FA9 /* HelloWorld */,
 			);
@@ -213,6 +222,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D7922DE423116AD3003F7A70 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D7922DEB23116FE8003F7A70 /* ProfileCell */,
+				D7922DE523116F6A003F7A70 /* ProfileViewModel.swift */,
+				D7922DE923116F8D003F7A70 /* ProfileTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D7922DEB23116FE8003F7A70 /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				D7922DEC231179AC003F7A70 /* ProfileTableViewCell.swift */,
+				D7922DED231179AC003F7A70 /* ProfileTableViewCell.xib */,
+			);
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
 		E814F7DB2310712200788FA9 /* Base classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,7 +280,6 @@
 				696FE490217635CB005C9FDD /* Sources */,
 				696FE491217635CB005C9FDD /* Frameworks */,
 				696FE492217635CB005C9FDD /* Resources */,
-				699E0A862177DE4000B2A204 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -329,6 +356,7 @@
 				696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */,
 				E814F7EF2310716700788FA9 /* HelloWorldView.xib in Resources */,
 				696FE49D217635CB005C9FDD /* Main.storyboard in Resources */,
+				D7922DEF231179AC003F7A70 /* ProfileTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,24 +370,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		699E0A862177DE4000B2A204 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/Pods/SwiftLint/swiftlint\n";
-		};
 		9DA1A4651AAA7DE86DDDE3DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,11 +400,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
+				D7922DEE231179AC003F7A70 /* ProfileTableViewCell.swift in Sources */,
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
+				D7922DEA23116F8D003F7A70 /* ProfileTableViewController.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
 				E814F7E92310714300788FA9 /* HelloWorldViewController.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
+				D7922DE623116F6A003F7A70 /* ProfileViewModel.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
 				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
@@ -517,6 +530,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,7 +538,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.netguru.college.app;
 				PRODUCT_NAME = NetguruCollegeApp;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -535,6 +549,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -542,7 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.netguru.college.app;
 				PRODUCT_NAME = NetguruCollegeApp;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
