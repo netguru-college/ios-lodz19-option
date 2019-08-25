@@ -10,15 +10,16 @@ class SearchViewController: UIViewController {
     private var customView: SearchView {
         return view as! SearchView
 	}
-    private var searchController: UISearchController
+    private var searchController = UISearchController(searchResultsController: nil)
     private var searchScopeButtonTitles = ["Title", "Genre"]
+    private let searchViewModel: SearchViewModel
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
 	}
 
-    init(searchController: UISearchController = UISearchController(searchResultsController: nil)) {
-        self.searchController = searchController
+    init(searchViewModel: SearchViewModel) {
+        self.searchViewModel = searchViewModel
         super.init(nibName: nil, bundle: nil)
 
         tabBarItem.title = "Search"
@@ -39,7 +40,8 @@ class SearchViewController: UIViewController {
     private func setupTableView() {
         customView.tableView.register(
             UINib(nibName: "SearchViewCell", bundle: nil),
-            forCellReuseIdentifier: SearchViewCell.searchViewCellReuseIdentifier)
+            forCellReuseIdentifier: SearchViewCell.searchViewCellReuseIdentifier
+        )
         customView.tableView.delegate = self
         customView.tableView.dataSource = self
         customView.tableView.rowHeight = 150

@@ -28,7 +28,7 @@ class APIClient {
         
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
         let authParameter = URLQueryItem(name: "api_key", value: "a00875199e7f742f3432f6d12ca3b4d1")
-
+        
         components.queryItems = [authParameter] + (request.parameters?.compactMap { URLQueryItem(name: $0.key, value: $0.value) } ?? []) // add as URL component
 
         if let urlWithParams = components.url {

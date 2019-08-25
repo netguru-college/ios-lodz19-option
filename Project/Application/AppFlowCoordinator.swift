@@ -11,7 +11,8 @@ final class AppFlowCoordinator: FlowCoordinator {
     // MARK: - Properties
     
     private let window: UIWindow
-    
+
+    private let appDependencies: AppDependencies
     private var homeFlowCoordinator: HomeFlowCoordinator
     private var searchFlowCoordinator: SearchFlowCoordinator
     private var profileFlowCoordinator: ProfileFlowCoordinator
@@ -20,7 +21,8 @@ final class AppFlowCoordinator: FlowCoordinator {
     
     init(window: UIWindow) {
         self.window = window
-        searchFlowCoordinator = SearchFlowCoordinator()
+        appDependencies = AppDependencies()
+        searchFlowCoordinator = SearchFlowCoordinator(apiService: appDependencies.apiService)
         homeFlowCoordinator = HomeFlowCoordinator()
         profileFlowCoordinator = ProfileFlowCoordinator()
         
