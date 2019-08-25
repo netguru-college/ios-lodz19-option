@@ -20,10 +20,8 @@ class DetailViewModel {
         view.movieRating.text = "Rating: \(movie.voteAverage)"
         view.movieDescriptionLabel.text = movie.description
 
-        if let posterPath = movie.posterPath {
-            let url = "https://image.tmdb.org/t/p/w500\(posterPath)"
-
-            view.moviePosterImageView.kf.setImage(with: URL(string: url))
+        if let posterURL = movie.posterURL {
+            view.moviePosterImageView.kf.setImage(with: posterURL)
         }
     }
 }
