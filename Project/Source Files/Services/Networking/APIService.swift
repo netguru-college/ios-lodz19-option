@@ -7,7 +7,6 @@
 import UIKit
 
 class Service {
-
     private let apiClient = APIClient()
     
     func fetchHomeView(success: @escaping ([Movie]) -> Void, failure: @escaping (Error?) -> Void) {
