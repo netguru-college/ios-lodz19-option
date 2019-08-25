@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileHeaderCell" rowHeight="145" id="KGk-i7-Jjw" customClass="ProfileHeaderCell" customModule="NetguruCollegeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="144.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User Cruiser" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNS-T3-TlY">
+                        <rect key="frame" x="153" y="11" width="96" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Watched Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVa-nh-j8F">
+                        <rect key="frame" x="153" y="51" width="175" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Favorite Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBv-Jg-LSs">
+                        <rect key="frame" x="153" y="91" width="175" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPe-Vl-t8P">
+                        <rect key="frame" x="336" y="57" width="49" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUA-hX-73F">
+                        <rect key="frame" x="336" y="97" width="49" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="XY9-0g-ONE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="MHu-NY-a1N">
+                        <rect key="frame" x="20" y="24" width="100" height="96.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="2Jh-sX-PhV"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="aUA-hX-73F" secondAttribute="trailing" constant="-8" id="0S0-2Y-GjY"/>
+                    <constraint firstItem="VNS-T3-TlY" firstAttribute="leading" secondItem="MHu-NY-a1N" secondAttribute="trailing" constant="33" id="1Hh-Yy-rpf"/>
+                    <constraint firstItem="aUA-hX-73F" firstAttribute="top" secondItem="rPe-Vl-t8P" secondAttribute="bottom" constant="19" id="25a-CJ-Ud7"/>
+                    <constraint firstItem="aUA-hX-73F" firstAttribute="centerY" secondItem="gBv-Jg-LSs" secondAttribute="centerY" id="7uY-DZ-Kea"/>
+                    <constraint firstItem="gBv-Jg-LSs" firstAttribute="trailing" secondItem="dVa-nh-j8F" secondAttribute="trailing" id="EHf-Fl-Sys"/>
+                    <constraint firstItem="VNS-T3-TlY" firstAttribute="leading" secondItem="dVa-nh-j8F" secondAttribute="leading" id="Gcm-ab-CrQ"/>
+                    <constraint firstItem="VNS-T3-TlY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Hf0-Pf-kyd"/>
+                    <constraint firstItem="MHu-NY-a1N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="Qf0-ZE-A8k"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aUA-hX-73F" secondAttribute="bottom" constant="16" id="RlC-YH-C7B"/>
+                    <constraint firstItem="rPe-Vl-t8P" firstAttribute="leading" secondItem="dVa-nh-j8F" secondAttribute="trailing" constant="8" id="V46-yD-NMH"/>
+                    <constraint firstItem="dVa-nh-j8F" firstAttribute="leading" secondItem="gBv-Jg-LSs" secondAttribute="leading" id="c5C-1G-J7e"/>
+                    <constraint firstItem="MHu-NY-a1N" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cAZ-PT-X7b"/>
+                    <constraint firstItem="MHu-NY-a1N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="i4n-d1-Z0T"/>
+                    <constraint firstItem="dVa-nh-j8F" firstAttribute="top" secondItem="VNS-T3-TlY" secondAttribute="bottom" constant="8" id="oGI-FM-MZf"/>
+                    <constraint firstItem="rPe-Vl-t8P" firstAttribute="leading" secondItem="aUA-hX-73F" secondAttribute="leading" id="oQm-tn-VDq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="favoriteMoviesCountLabel" destination="aUA-hX-73F" id="8XE-AP-qf0"/>
+                <outlet property="userImageView" destination="MHu-NY-a1N" id="YbM-nc-7JS"/>
+                <outlet property="usernameLabel" destination="VNS-T3-TlY" id="zE0-vl-iCF"/>
+                <outlet property="watchedMoviesCountLabel" destination="rPe-Vl-t8P" id="Fun-Dq-DOi"/>
+            </connections>
+            <point key="canvasLocation" x="114.40000000000001" y="146.17691154422789"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Profile" width="50" height="50"/>
+    </resources>
+</document>
