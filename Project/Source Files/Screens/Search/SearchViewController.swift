@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SearchViewController: UIViewController {
 
@@ -93,7 +94,7 @@ class SearchViewController: UIViewController {
 
     private func setTableViewBackground() {
 
-        func setErrorBackgroundView(message: String) {
+        func setErrorBackgroundView(title: String = "Oops!", message: String) {
             errorBackgroundView?.removeFromSuperview()
             errorBackgroundView = nil
             errorBackgroundView = ErrorBackgroundView()
@@ -101,10 +102,18 @@ class SearchViewController: UIViewController {
             tableView.separatorStyle = .none
             errorBackgroundView?.configureConstraints()
             errorBackgroundView?.errorDescription.text = message
+            errorBackgroundView?.errorTitle.text = title
+        }
+
+        func removeErrorBackgroundView() {
+            tableView.subviews.forEach( { if $0 is ErrorBackgroundView { $0.removeFromSuperview() } } )
+            errorBackgroundView = nil
         }
 
         func setForEmpty() {
+            removeErrorBackgroundView()
             tableView.separatorStyle = .none
+            setErrorBackgroundView(title: "", message: "Use the search bar to find a movie")
         }
 
         func setForNoSearchResults() {
@@ -112,8 +121,7 @@ class SearchViewController: UIViewController {
         }
 
         func setForPopulated() {
-            tableView.subviews.forEach( { if $0 is ErrorBackgroundView { $0.removeFromSuperview() } } )
-            errorBackgroundView = nil
+            removeErrorBackgroundView()
             tableView.separatorStyle = .singleLine
         }
 
@@ -145,7 +153,8 @@ extension SearchViewController: UITableViewDataSource {
             withIdentifier: SearchViewCell.searchViewCellReuseIdentifier) as? SearchViewCell else {
                 fatalError("Can't cast tableView cell to SearchViewCell")
         }
-        cell.titleLabel.text = searchViewModel.movieArray[indexPath.row].title
+        let movie = searchViewModel.movieArray[indexPath.row]
+        cell.titleLabel.text = movie.title
         cell.subtitleLabel.text = String(searchViewModel.movieArray[indexPath.row].voteAverage)
         return cell
     }

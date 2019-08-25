@@ -38,7 +38,6 @@ class ErrorBackgroundView: UIView {
         backgroundColor = .white
         // configure errorTitle
         addSubview(errorTitle)
-        errorTitle.text = "Oops!"
         errorTitle.font = .systemFont(ofSize: 24)
         errorTitle.textColor = .darkGray
         errorTitle.textAlignment = .center
