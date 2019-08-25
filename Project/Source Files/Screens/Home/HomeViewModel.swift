@@ -44,10 +44,8 @@ extension HomeViewModel: UICollectionViewDataSource {
         let movie = popularMovies[indexPath.row]
         let movieCell = collectionView.dequeueReusableCell(withReuseIdentifier: "movie", for: indexPath) as! MovieCollectionViewCell
 
-        if let posterPath = movie.posterPath {
-            let url = "https://image.tmdb.org/t/p/w500\(posterPath)"
-
-            movieCell.posterImageTask = movieCell.moviePosterImageView.kf.setImage(with: URL(string: url))
+        if let posterURL = movie.posterURL {
+            movieCell.posterImageTask = movieCell.moviePosterImageView.kf.setImage(with: posterURL)
         }
 
         return movieCell
