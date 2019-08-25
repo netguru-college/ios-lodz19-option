@@ -26,11 +26,8 @@
 		E814F7E32310713600788FA9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DF2310713600788FA9 /* APIClient.swift */; };
 		E814F7E42310713600788FA9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7E02310713600788FA9 /* APIError.swift */; };
 		E814F7E52310713600788FA9 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7E12310713600788FA9 /* APIRequest.swift */; };
-		E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7E62310714300788FA9 /* WelcomeViewController.swift */; };
 		E814F7ED2310716000788FA9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7EC2310716000788FA9 /* HomeView.swift */; };
 		E814F7EF2310716700788FA9 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E814F7EE2310716700788FA9 /* HomeView.xib */; };
-		E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7F02310716D00788FA9 /* WelcomeView.swift */; };
-		E814F7F32310717400788FA9 /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E814F7F22310717400788FA9 /* WelcomeView.xib */; };
 		E814F7F52310719E00788FA9 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7F42310719D00788FA9 /* AppFlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,19 +60,15 @@
 		D7404BC8231141F100001B79 /* SearchFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlowCoordinator.swift; sourceTree = "<group>"; };
 		D7404BCA2311421600001B79 /* ProfileFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlowCoordinator.swift; sourceTree = "<group>"; };
 		D78515D7231144C400042CEE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		D78515D92311469000042CEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D78515DB231146D900042CEE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		E814F7DE2310713600788FA9 /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		E814F7DF2310713600788FA9 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E814F7E02310713600788FA9 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		E814F7E12310713600788FA9 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		E814F7E62310714300788FA9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E814F7E72310714300788FA9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E814F7EC2310716000788FA9 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E814F7EE2310716700788FA9 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
-		E814F7F02310716D00788FA9 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		E814F7F22310717400788FA9 /* WelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
 		E814F7F42310719D00788FA9 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				D78515D6231144B600042CEE /* Controllers */,
-				E814F7EB2310714E00788FA9 /* Welcome */,
 				E814F7EA2310714500788FA9 /* Home */,
 			);
 			path = Screens;
@@ -236,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				D78515D7231144C400042CEE /* SearchViewController.swift */,
-				D78515D92311469000042CEE /* HomeViewController.swift */,
 				D78515DB231146D900042CEE /* ProfileViewController.swift */,
 			);
 			path = Controllers;
@@ -268,16 +259,6 @@
 				45CC6B0023114B3B00AB9D12 /* MovieCollectionViewCell.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		E814F7EB2310714E00788FA9 /* Welcome */ = {
-			isa = PBXGroup;
-			children = (
-				E814F7E62310714300788FA9 /* WelcomeViewController.swift */,
-				E814F7F02310716D00788FA9 /* WelcomeView.swift */,
-				E814F7F22310717400788FA9 /* WelcomeView.xib */,
-			);
-			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,7 +345,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */,
-				E814F7F32310717400788FA9 /* WelcomeView.xib in Resources */,
 				696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */,
 				E814F7EF2310716700788FA9 /* HomeView.xib in Resources */,
 				696FE49D217635CB005C9FDD /* Main.storyboard in Resources */,
@@ -437,11 +417,9 @@
 				D7404BC9231141F100001B79 /* SearchFlowCoordinator.swift in Sources */,
 				D78515DC231146D900042CEE /* ProfileViewController.swift in Sources */,
 				D7404BC7231141E400001B79 /* HomeFlowCoordinator.swift in Sources */,
-				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
 				45CC6AFF2311433300AB9D12 /* HomeViewModel.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
-				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
 				E814F7F52310719E00788FA9 /* AppFlowCoordinator.swift in Sources */,
 				E814F7ED2310716000788FA9 /* HomeView.swift in Sources */,
 				D7404BCB2311421600001B79 /* ProfileFlowCoordinator.swift in Sources */,

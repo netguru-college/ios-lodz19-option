@@ -15,6 +15,9 @@ class HomeViewController: UIViewController {
 
     init() {
         super.init(nibName: nil, bundle: nil)
+
+        tabBarItem.title = "Home"
+        tabBarItem.image = UIImage(named: "Home")
     }
 
     required init?(coder aDecoder: NSCoder) {
