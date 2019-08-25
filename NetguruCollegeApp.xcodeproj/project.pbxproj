@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		2E5CB7214B4A78251C20EA48 /* Pods_NetguruCollegeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */; };
+		43AD9BA223114B7E008E74C9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AD9BA123114B7E008E74C9 /* APIService.swift */; };
+		692FEDDC2311798400AEBE89 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692FEDDB2311798400AEBE89 /* Movie.swift */; };
+		692FEDDE231179B100AEBE89 /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692FEDDD231179B100AEBE89 /* APIRequests.swift */; };
 		696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE497217635CB005C9FDD /* AppDelegate.swift */; };
 		696FE49D217635CB005C9FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49B217635CB005C9FDD /* Main.storyboard */; };
 		696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696FE49E217635D2005C9FDD /* Assets.xcassets */; };
 		696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FE4A0217635D2005C9FDD /* LaunchScreen.storyboard */; };
 		696FE4AD217635D2005C9FDD /* NetguruCollegeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */; };
-		93FFD2FC231141B6004BF0EE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFD2FB231141B6004BF0EE /* SearchViewController.swift */; };
-		93FFD2FD231141B6004BF0EE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFD2FB231141B6004BF0EE /* SearchViewController.swift */; };
-		93FFD2FF231141EB004BF0EE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFD2FE231141EB004BF0EE /* SearchView.swift */; };
-		93FFD300231141EB004BF0EE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFD2FE231141EB004BF0EE /* SearchView.swift */; };
-		93FFD30223114205004BF0EE /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FFD30123114205004BF0EE /* SearchView.xib */; };
-		93FFD30323114205004BF0EE /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FFD30123114205004BF0EE /* SearchView.xib */; };
-		93FFD309231144BF004BF0EE /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFD307231144BF004BF0EE /* SearchViewCell.swift */; };
-		93FFD30A231144BF004BF0EE /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFD307231144BF004BF0EE /* SearchViewCell.swift */; };
-		93FFD30B231144BF004BF0EE /* SearchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FFD308231144BF004BF0EE /* SearchViewCell.xib */; };
-		93FFD30C231144BF004BF0EE /* SearchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FFD308231144BF004BF0EE /* SearchViewCell.xib */; };
+		93667AC7231275EC005DA7D6 /* SearchTab in Resources */ = {isa = PBXBuildFile; fileRef = 93667AC6231275EC005DA7D6 /* SearchTab */; };
+		D7404BC7231141E400001B79 /* HomeFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7404BC6231141E400001B79 /* HomeFlowCoordinator.swift */; };
+		D7404BC9231141F100001B79 /* SearchFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7404BC8231141F100001B79 /* SearchFlowCoordinator.swift */; };
+		D7404BCB2311421600001B79 /* ProfileFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7404BCA2311421600001B79 /* ProfileFlowCoordinator.swift */; };
+		D78515D8231144C400042CEE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78515D7231144C400042CEE /* SearchViewController.swift */; };
+		D78515DA2311469000042CEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78515D92311469000042CEE /* HomeViewController.swift */; };
+		D78515DC231146D900042CEE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78515DB231146D900042CEE /* ProfileViewController.swift */; };
 		E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */; };
 		E814F7E22310713600788FA9 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DE2310713600788FA9 /* APIMethod.swift */; };
 		E814F7E32310713600788FA9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E814F7DF2310713600788FA9 /* APIClient.swift */; };
@@ -48,7 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43AD9BA123114B7E008E74C9 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		5917DB1E95701B4EE6BDDCAF /* Pods_NetguruCollegeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetguruCollegeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		692FEDDB2311798400AEBE89 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		692FEDDD231179B100AEBE89 /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
 		696FE494217635CB005C9FDD /* NetguruCollegeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetguruCollegeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		696FE497217635CB005C9FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		696FE49C217635CB005C9FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,12 +62,14 @@
 		696FE4AC217635D2005C9FDD /* NetguruCollegeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetguruCollegeAppTests.swift; sourceTree = "<group>"; };
 		696FE4AE217635D2005C9FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70B9FAC81C5FF8A335FA5053 /* Pods-NetguruCollegeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.debug.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.debug.xcconfig"; sourceTree = "<group>"; };
-		93FFD2FB231141B6004BF0EE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		93FFD2FE231141EB004BF0EE /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		93FFD30123114205004BF0EE /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
-		93FFD307231144BF004BF0EE /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
-		93FFD308231144BF004BF0EE /* SearchViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewCell.xib; sourceTree = "<group>"; };
+		93667AC6231275EC005DA7D6 /* SearchTab */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SearchTab; sourceTree = "<group>"; };
 		B70CCCFD923A49BB70EE7D09 /* Pods-NetguruCollegeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetguruCollegeApp.release.xcconfig"; path = "Target Support Files/Pods-NetguruCollegeApp/Pods-NetguruCollegeApp.release.xcconfig"; sourceTree = "<group>"; };
+		D7404BC6231141E400001B79 /* HomeFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowCoordinator.swift; sourceTree = "<group>"; };
+		D7404BC8231141F100001B79 /* SearchFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlowCoordinator.swift; sourceTree = "<group>"; };
+		D7404BCA2311421600001B79 /* ProfileFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlowCoordinator.swift; sourceTree = "<group>"; };
+		D78515D7231144C400042CEE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D78515D92311469000042CEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D78515DB231146D900042CEE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E814F7DC2310712B00788FA9 /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		E814F7DE2310713600788FA9 /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
 		E814F7DF2310713600788FA9 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -98,9 +103,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43AD9BA023114B3C008E74C9 /* FetchAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FetchAPI;
+			sourceTree = "<group>";
+		};
 		4EF6845F21E6435400DA50FC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				43AD9BA023114B3C008E74C9 /* FetchAPI */,
 				4EF6846021E6438300DA50FC /* Networking */,
 			);
 			path = Services;
@@ -109,6 +122,8 @@
 		4EF6846021E6438300DA50FC /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				43AD9BA123114B7E008E74C9 /* APIService.swift */,
+				692FEDDD231179B100AEBE89 /* APIRequests.swift */,
 				E814F7DF2310713600788FA9 /* APIClient.swift */,
 				E814F7E02310713600788FA9 /* APIError.swift */,
 				E814F7DE2310713600788FA9 /* APIMethod.swift */,
@@ -124,6 +139,14 @@
 				B70CCCFD923A49BB70EE7D09 /* Pods-NetguruCollegeApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		692FEDDA2311797900AEBE89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				692FEDDB2311798400AEBE89 /* Movie.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		696FE48B217635CB005C9FDD = {
@@ -170,6 +193,8 @@
 		696FE4B8217637C7005C9FDD /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				692FEDDA2311797900AEBE89 /* Models */,
+				D7404BC5231141D200001B79 /* FlowCoordinators */,
 				E814F7DB2310712200788FA9 /* Base classes */,
 				4EF6845F21E6435400DA50FC /* Services */,
 				696FE4B9217637D5005C9FDD /* Screens */,
@@ -180,7 +205,8 @@
 		696FE4B9217637D5005C9FDD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				93FFD2FA2311419F004BF0EE /* SearchTab */,
+				93667AC6231275EC005DA7D6 /* SearchTab */,
+				D78515D6231144B600042CEE /* Controllers */,
 				E814F7EB2310714E00788FA9 /* Welcome */,
 				E814F7EA2310714500788FA9 /* HelloWorld */,
 			);
@@ -221,16 +247,24 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		93FFD2FA2311419F004BF0EE /* SearchTab */ = {
+		D7404BC5231141D200001B79 /* FlowCoordinators */ = {
 			isa = PBXGroup;
 			children = (
-				93FFD2FB231141B6004BF0EE /* SearchViewController.swift */,
-				93FFD2FE231141EB004BF0EE /* SearchView.swift */,
-				93FFD30123114205004BF0EE /* SearchView.xib */,
-				93FFD307231144BF004BF0EE /* SearchViewCell.swift */,
-				93FFD308231144BF004BF0EE /* SearchViewCell.xib */,
+				D7404BC6231141E400001B79 /* HomeFlowCoordinator.swift */,
+				D7404BC8231141F100001B79 /* SearchFlowCoordinator.swift */,
+				D7404BCA2311421600001B79 /* ProfileFlowCoordinator.swift */,
 			);
-			path = SearchTab;
+			path = FlowCoordinators;
+			sourceTree = "<group>";
+		};
+		D78515D6231144B600042CEE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D78515D7231144C400042CEE /* SearchViewController.swift */,
+				D78515D92311469000042CEE /* HomeViewController.swift */,
+				D78515DB231146D900042CEE /* ProfileViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		D78ED9CC3C02DDC356B00910 /* Frameworks */ = {
@@ -280,7 +314,6 @@
 				696FE490217635CB005C9FDD /* Sources */,
 				696FE491217635CB005C9FDD /* Frameworks */,
 				696FE492217635CB005C9FDD /* Resources */,
-				699E0A862177DE4000B2A204 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -353,9 +386,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				696FE4A2217635D2005C9FDD /* LaunchScreen.storyboard in Resources */,
-				93FFD30B231144BF004BF0EE /* SearchViewCell.xib in Resources */,
 				E814F7F32310717400788FA9 /* WelcomeView.xib in Resources */,
-				93FFD30223114205004BF0EE /* SearchView.xib in Resources */,
+				93667AC7231275EC005DA7D6 /* SearchTab in Resources */,
 				696FE49F217635D2005C9FDD /* Assets.xcassets in Resources */,
 				E814F7EF2310716700788FA9 /* HelloWorldView.xib in Resources */,
 				696FE49D217635CB005C9FDD /* Main.storyboard in Resources */,
@@ -366,32 +398,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93FFD30C231144BF004BF0EE /* SearchViewCell.xib in Resources */,
-				93FFD30323114205004BF0EE /* SearchView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		699E0A862177DE4000B2A204 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/Pods/SwiftLint/swiftlint\n";
-		};
 		9DA1A4651AAA7DE86DDDE3DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,19 +433,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				692FEDDE231179B100AEBE89 /* APIRequests.swift in Sources */,
+				D78515D8231144C400042CEE /* SearchViewController.swift in Sources */,
 				E814F7DD2310712B00788FA9 /* FlowCoordinator.swift in Sources */,
 				696FE498217635CB005C9FDD /* AppDelegate.swift in Sources */,
 				E814F7E22310713600788FA9 /* APIMethod.swift in Sources */,
 				E814F7E42310713600788FA9 /* APIError.swift in Sources */,
-				93FFD2FC231141B6004BF0EE /* SearchViewController.swift in Sources */,
 				E814F7E92310714300788FA9 /* HelloWorldViewController.swift in Sources */,
+				43AD9BA223114B7E008E74C9 /* APIService.swift in Sources */,
+				D7404BC9231141F100001B79 /* SearchFlowCoordinator.swift in Sources */,
+				D78515DC231146D900042CEE /* ProfileViewController.swift in Sources */,
+				D7404BC7231141E400001B79 /* HomeFlowCoordinator.swift in Sources */,
 				E814F7F12310716D00788FA9 /* WelcomeView.swift in Sources */,
+				692FEDDC2311798400AEBE89 /* Movie.swift in Sources */,
 				E814F7E52310713600788FA9 /* APIRequest.swift in Sources */,
-				93FFD309231144BF004BF0EE /* SearchViewCell.swift in Sources */,
-				93FFD2FF231141EB004BF0EE /* SearchView.swift in Sources */,
 				E814F7E32310713600788FA9 /* APIClient.swift in Sources */,
+				D78515DA2311469000042CEE /* HomeViewController.swift in Sources */,
 				E814F7E82310714300788FA9 /* WelcomeViewController.swift in Sources */,
 				E814F7F52310719E00788FA9 /* AppFlowCoordinator.swift in Sources */,
+				D7404BCB2311421600001B79 /* ProfileFlowCoordinator.swift in Sources */,
 				E814F7ED2310716000788FA9 /* HelloWorldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,9 +460,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93FFD30A231144BF004BF0EE /* SearchViewCell.swift in Sources */,
-				93FFD2FD231141B6004BF0EE /* SearchViewController.swift in Sources */,
-				93FFD300231141EB004BF0EE /* SearchView.swift in Sources */,
 				696FE4AD217635D2005C9FDD /* NetguruCollegeAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,6 +573,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FZZ5HZKNX;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -566,7 +582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.netguru.college.app;
 				PRODUCT_NAME = NetguruCollegeApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -580,6 +596,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9FZZ5HZKNX;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,7 +605,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.netguru.college.app;
 				PRODUCT_NAME = NetguruCollegeApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
