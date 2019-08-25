@@ -11,7 +11,8 @@ class SearchFlowCoordinator: FlowCoordinator {
     override init() {
         super.init()
         
-        rootViewController = SearchViewController()
+        let navigationController = UINavigationController(rootViewController: SearchViewController())
+        rootViewController = navigationController
     }
     
 }
