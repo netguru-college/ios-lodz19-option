@@ -44,11 +44,3 @@ final class AppFlowCoordinator: FlowCoordinator {
         window.makeKeyAndVisible()
     }
 }
-
-extension AppFlowCoordinator: HelloWorldViewControllerDelegate {
-
-    func didSelectNextButton() {
-        let nextViewController = WelcomeViewController()
-        rootViewController.show(nextViewController, sender: nil)
-    }
-}
