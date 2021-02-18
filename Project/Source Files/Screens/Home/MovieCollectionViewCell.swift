@@ -30,7 +30,6 @@ class MovieCollectionViewCell: UICollectionViewCell {
     }
     
     override func layoutSubviews() {
-        contentView.backgroundColor = .white
         contentView.layer.cornerRadius = 10
     }
     
